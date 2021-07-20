@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  nginx:
+    image: hieupth/nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ${NGINX_CERTS_DIR:-/certs}:/certs
+      - ${NGINX_TEMPLATE_DIR:-./templates}:${NGINX_ENVSUBST_TEMPLATE_DIR:-/etc/nginx/templates}
+    env_file:
+      - .env
