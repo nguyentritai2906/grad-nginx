@@ -4,6 +4,9 @@ Docker alpine image for Nginx (web|reverse proxy) server with some additional st
 * **PageSpeed**: optimizing the performance of websites.
 * **ModSecurity**: web application firewall module.
 
+## Deploy
+Copy **env.template** file to **.env** file and edit base on your needs if you decide to run docker-compose.
+
 ## Customization
 This image use templates folder for customization. You can find its structure in the default templates folder. These 
 config templates are applied by default. <br><br>
