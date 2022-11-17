@@ -5,7 +5,7 @@ server {
 
     ## TLS certification.
     ssl_certificate /certs/${NGINX_DOMAIN}/fullchain.pem;
-    ssl_certificate_key /certs/${NGINX_DOMAIN}/private.key;
+    ssl_certificate_key /certs/${NGINX_DOMAIN}/private.pem;
     ssl_trusted_certificate /certs/${NGINX_DOMAIN}/fullchain.pem;
 
     ## Default page.

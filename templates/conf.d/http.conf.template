@@ -29,7 +29,7 @@ etag off;
 # Prevent XSS attack.
 add_header X-XSS-Protection "1; mode=block";
 # More XSS protection by enable CSP.
-add_header Content-Security-Policy "default-src 'self'; font-src *;img-src * data:; script-src *; style-src *";
+# add_header Content-Security-Policy "default-src 'self'; font-src *;img-src * data:; script-src *; style-src *";
 # Prevent MIME sniffing.
 add_header X-Content-Type-Options nosniff;
 # Prevent Click-jacking attack.
